@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <script src="./assets/js/main.js" defer></script>
-    <script src="./assets/js/slider.js" defer></script>
-    <script src="./assets/js/articles.js" defer></script>
     <script src="./assets/js/login.js" defer></script>
+    <script src="./assets/js/accordion.js" defer></script>
 
     <title>Proyecto en JS de Natalia Nistor</title>
 </head>
@@ -47,32 +46,66 @@
             </nav>
         </header>
 
-        <section class="layout__slider">
-            <button class="slider__btn-prev">
-                <i class="slider__icon fa-solid fa-caret-left"></i>
-            </button>
+        <main class="layout__main">
+            <!-- aqui va el acordeon -->
 
-            <div class="slider__slides">
-                <article class="slides__item slides__item--active">
-                    <img class="slides__img" src="./assets/img/hojas.jpg" alt="hojas" />
+            <h2 class="main__title">Sobre mi</h2>
+
+            <div class="main__accordion">
+                <article class="accordion__collapse">
+
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">¿Quienes somos?</p>
+                    </header>
+
+                    <div class="collapse__body">
+                        <p class="collapse__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet enim in
+                            perspiciatis aspernatur, asperiores voluptatem libero cumque. Expedita, consectetur ipsum
+                            perferendis perspiciatis obcaecati iure error autem molestiae vitae sint!
+                        </p>
+                    </div>
+
                 </article>
 
-                <article class="slides__item slides__item--active">
-                    <img class="slides__img" src="./assets/img/cielo.jpg" alt="cielo" />
+                <article class="accordion__collapse">
+
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">Nuestros servicios</p>
+                    </header>
+
+                    <div class="collapse__body">
+                        <p class="collapse__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet enim in
+                            perspiciatis aspernatur, asperiores voluptatem libero cumque. Expedita, consectetur ipsum
+                            perferendis perspiciatis obcaecati iure error autem molestiae vitae sint!
+                        </p>
+                    </div>
+
                 </article>
 
-                <article class="slides__item slides__item--active">
-                    <img class="slides__img" src="./assets/img/rojo.jpg" alt="rojo" />
+                <article class="accordion__collapse">
+
+                    <header class="collapse__header">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <p class="collapse__title">¿Qué dicen nuestros clientes?</p>
+                    </header>
+
+                    <div class="collapse__body">
+                        <p class="collapse__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet enim in
+                            perspiciatis aspernatur, asperiores voluptatem libero cumque. Expedita, consectetur ipsum
+                            perferendis perspiciatis obcaecati iure error autem molestiae vitae sint!
+                        </p>
+                    </div>
+
                 </article>
             </div>
-
-            <button class="slider__btn-next">
-                <i class="slider__icon fa-solid fa-caret-right"></i>
-            </button>
-        </section>
-
-        <main class="layout__articles">
-            <!-- aqui van los articulos -->
         </main>
 
         <aside class="layout__aside">
